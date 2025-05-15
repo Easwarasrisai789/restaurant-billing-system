@@ -10,7 +10,6 @@ root.title("Restaurant Billing System")
 bg_color = "#074463"
 fg_color = "white"
 
-# Title
 title = Label(root, text="Restaurant Billing System", bd=12, relief=GROOVE, bg=bg_color, fg=fg_color,
               font=("times new roman", 30, "bold"), pady=2).pack(fill=X)
 
@@ -182,7 +181,7 @@ def clear_data():
 def exit_app():
     root.destroy()
 
-# Ensure 'bills' directory exists
+
 if not os.path.exists('bills'):
     os.makedirs('bills')
 
